@@ -37,7 +37,7 @@ class Scraper(object):
     def get_artist_info(self, artist: Artist) -> dict:
         """Given an artist object, query LastFM for artist metadata.
            Return a dictionary of similar artists, artist's top tags,
-           and other artists sharing the top 3 tags. """
+           and other artists sharing the top 3 tags."""
         artist_name = str(artist.name).replace('-', '')
         artist_info = {}
         
